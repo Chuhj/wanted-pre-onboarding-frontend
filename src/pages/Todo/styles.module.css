@@ -1,0 +1,44 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.logout {
+  margin-bottom: 10px;
+}
+
+.form {
+  display: flex;
+  gap: 10px;
+  margin-left: 30px;
+}
+
+.form > input {
+  width: 200px;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.list > li {
+  width: 500px;
+}
+
+.list > li > label {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3px;
+}
