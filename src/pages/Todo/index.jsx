@@ -18,7 +18,10 @@ export default function Todo() {
     // 추가버튼을 클릭 했을 때 실행되는 함수.
     if (newInput === '') return;
     createTodo(newInput)
-      .then((res) => setData((prev) => [...prev, res.data]))
+      .then((res) => {
+        setData((prev) => [...prev, res.data]);
+        setNewInput('');
+      })
       .catch(({ message }) => alert(`할 일 추가 중 문제가 발생했습니다.: ${message}`))
       .finally(() => fetchTodo());
   };
