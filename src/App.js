@@ -5,7 +5,7 @@ import Todo from './pages/Todo';
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
       <div className="App">
         <Routes>
           <Route path="/" element={<Navigate to={'/signin'} replace />} />
