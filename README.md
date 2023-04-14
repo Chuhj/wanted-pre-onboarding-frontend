@@ -3,6 +3,7 @@
 ## 프로젝트 실행 방법
 ```bash
 git clone https://github.com/Chuhj/wanted-pre-onboarding-frontend.git
+cd wanted-pre-onboarding-frontend
 npm insall
 npm start
 ```
